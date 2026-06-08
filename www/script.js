@@ -12,8 +12,6 @@ function Submit()
     const d = new Date();
     let setMonth = d.getMonth() + 1;
     let contractLength = 24;
-    let set = true;
-    let counter = 0;
     let firstSet = ((12-setMonth + 3)%12)+1;
     let secondSet = 12;
     let thirdSet = contractLength - firstSet - secondSet;
