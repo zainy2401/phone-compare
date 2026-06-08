@@ -18,10 +18,16 @@ h1, h2, h3, h4, h5, h6
 header
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2rem 0;
+}
+
+header a
+{
+    font-size: 1.4rem;
+    font-style: italic;
 }
 
 h1
