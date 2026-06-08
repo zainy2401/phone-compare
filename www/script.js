@@ -18,11 +18,21 @@ function Submit()
     let secondSet = 12;
     let thirdSet = contractLength - firstSet - secondSet;
 
-    alert(upFront, monthly, monthly1, monthly2, cash, sim);
-
     let calc1 = (firstSet*monthly) + (secondSet*monthly1) + (thirdSet*monthly2) + upFront;
     result1.innerHTML = "£" + calc1.toFixed(2);
 
     let calc2 = cash + (sim*24);
     result2.innerHTML = "£" + calc2.toFixed(2);
+}
+
+function Clear()
+{
+    let upFront = Number(document.getElementById("upfront").value = 0);
+    let monthly = Number(document.getElementById("monthly").value = 0);
+    let monthly1 = Number(document.getElementById("monthly1").value = 0);
+    let monthly2 = Number(document.getElementById("monthly2").value = 0);
+    let cash = Number(document.getElementById("cashPrice").value = 0);
+    let sim = Number(document.getElementById("simOnly").value = 0);
+    let result1 = document.getElementById("result1").innerHTML = "";
+    let result2 = document.getElementById("result2").innerHTML = "";
 }

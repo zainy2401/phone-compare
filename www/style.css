@@ -47,6 +47,12 @@ h1
     align-items: center;
 }
 
+.divider
+{
+    background-color: red;
+    padding: 1px;
+}
+
 h2
 {
     text-align: center;
@@ -71,4 +77,34 @@ input
 .result
 {
     font-size: 1.8rem;
+}
+
+.final
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: .6rem 0;
+}
+
+.final button
+{
+    margin:0 .4rem;
+    font-size: .8rem;
+}
+
+@media screen and (max-width: 600px)
+{
+    .section-container
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .divider
+    {
+        width: 100%;
+        margin: 1rem ;
+    }
 }
