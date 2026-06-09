@@ -9,6 +9,9 @@ function Submit()
     let result1 = document.getElementById("result1");
     let result2 = document.getElementById("result2");
 
+    (monthly1 == 0) ? monthly1 = Number(monthly) : monthly1 == Number(monthly1);
+    (monthly2 == 0) ? monthly2 = Number(monthly1) : monthly2 == Number(monthly2);
+
     const d = new Date();
     let setMonth = d.getMonth() + 1;
     let contractLength = 24;
